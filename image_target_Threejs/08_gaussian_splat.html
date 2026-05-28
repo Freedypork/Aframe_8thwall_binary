@@ -34,9 +34,10 @@
     // --- Gaussian Splat via Spark.js ---
     // Spark.js supports .sog, .splat, .ply, .spz, and .ksplat formats.
     // With Three.js r178 this works natively — no polyfills needed.
-    const splat = new SplatMesh({ url: '../assets/splat_30000.sog' });
+    const splat = new SplatMesh({ url: '../assets/flower_14p.sog' });
     splat.position.set(0, 0.5, 0);
-    splat.scale.set(0.3, 0.3, 0.3);
+    splat.scale.set(0.2, 0.2, 0.2);
+    splat.rotation.x = -Math.PI / 2;
     group.add(splat);
 
     // --- Start XR8 ---
